@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+:root {
+  /* Типографика */
+  --font-large: 60px;
+  --font-medium: 40px;
+  --font-average: 28px;
+  --font-normal: 20px;
+  
+  /* Цвета */
+  --color-primary: #000000;
+  --color-secondary: #909090;
+  --color-white: #FFFFFF;
+  --gradient-dark: linear-gradient(91deg, rgba(61, 61, 61, 0.80) 0.38%, rgba(94, 94, 94, 0.80) 99.9%);
+  
+  /* Отступы */
+  --spacing-large: 200px;
+  --spacing-medium: 120px;
+  --spacing-small: 60px;
+  
+  /* Шрифты */
+  --font-primary: "Old Standard TT", serif;
+  --font-secondary: "Inter", sans-serif;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +34,707 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none; /* Убирает подчеркивание */
+  color: inherit; /* Наследует цвет текста */
+}
+
+a:visited {
+  color: inherit; /* Убирает фиолетовый цвет для посещенных ссылок */
+}
+
+a:focus {
+  outline: none; /* Стилизация обводки при фокусе */
+}
+
+
+.menu {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFF;
+  box-shadow: 0 4px 41.1px 0 rgba(0, 0, 0, 0.10);
+}
+
+.menu .logo {
+  width: 64px;
+  margin: 10px 0 10px 35px;
+}
+
+.menu .menu-mobile {
+  display: none;
+}
+
+.menu .menu-points {
+  display: inline-flex;
+}
+
+.menu .menu-item {
+  font-family: "Old Standard TT", serif;
+  margin: 0 35px;
+  color: #000;
+  font-size: var(--font-normal);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: color 0.3s ease;
+  will-change: color;
+}
+
+.menu .menu-item:hover {
+  transition: 0.3s;
+  color: rgba(0, 0, 0, 0.60);
+}
+
+.hero {
+  padding-top: 250px;
+  padding-bottom: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero .logo {
+  width: 120px;
+}
+
+.hero .hero-label {
+  color: #000;
+  font-family: "Old Standard TT";
+  font-size: var(--font-large);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero .hero-subtitle {
+  color: #000;
+  text-align: center;
+  font-family: "Old Standard TT";
+  font-size: var(--font-average);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-getMore {
+  margin-top: 120px;
+}
+
+.hero-getMore-title {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: var(--font-normal);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+
+.quotation {
+  width: 100%;
+}
+
+.quotation .quotation-block {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(91deg, rgba(61, 61, 61, 0.80) 0.38%, rgba(94, 94, 94, 0.80) 99.9%);
+  color: #FFF;
+  font-family: "Old Standard TT";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.quotation .quotation-author {
+  color: #000;
+  font-family: "Old Standard TT";
+  font-size: 36px;
+  padding-top: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 48px;
+  text-align: right;
+}
+
+.aboutMe {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aboutMe .aboutMe-image {
+  width: 40%;
+}
+
+.aboutMe .aboutMe-text {
+  width: 44%;
+}
+
+.aboutMe-text .aboutMe-title {
+  color: #000;
+  font-family: "Old Standard TT";
+  font-size: var(--font-medium);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.aboutMe-text .aboutMe-mainText {
+  color: #000;
+  font-family: Inter;
+  font-size: var(--font-normal);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.getFeedback {
+  margin-top: 110px;
+  border-radius: 33.5px;
+  border: 1px solid #909090;
+  width: 200px;
+  color: #909090;
+  font-family: Inter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-normal);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 14px 40px;
+}
+
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  margin: 200px 140px;
+  row-gap: 50px;
+}
+
+.skills .skills-label {
+  margin-bottom: 60px;
+  grid-column: span 8;
+  text-align: right;
+  color: #000;
+  text-align: right;
+  font-family: "Old Standard TT";
+  font-size: var(--font-medium);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.skills .skills-line {
+  grid-column: span 8;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 12px;
+}
+
+.skills-line .skill {
+  grid-column: span 2;
+  color: #909090;
+  text-align: center;
+  font-family: Inter;
+  font-size: var(--font-normal);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border-radius: 33.5px;
+  border: 1px solid #909090;
+  padding: 14px 0;
+}
+
+.skill-place {
+   grid-column: span 1;
+}
+
+
+.companies .companies-label {
+  text-align: center;
+  color: #000;
+  font-family: "Old Standard TT";
+  font-size: var(--font-medium);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.companies .companies-list {
+  margin: 100px 140px 0 100px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+}
+
+.companies-list .companies-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  grid-column: span 2;
+}
+
+.companies-container .company-logo {
+  height: 140px;
+}
+
+.companies-container .company-text {
+  margin-top: 20px;
+  color: #909090;
+  font-family: Inter;
+  font-size: var(--font-normal);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.companies-mainText {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  color: #909090;
+  font-family: Inter;
+  font-size: var(--font-normal);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.companies-textPoint {
+  margin: 16px 0;
+}
+
+.companies-bold {
+  color: #000;
+  font-family: Inter;
+  font-size: var(--font-normal);
+  font-weight: 400;
+  line-height: normal;
+}
+
+.companies-getFeedback {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+.achivments {
+  margin-top: 200px;
+  margin-left: 140px;
+  margin-right: 140px;
+  color: #000;
+  font-family: "Old Standard TT";
+  font-size: var(--font-medium);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-me-img-mobile {
+  display: none;
+}
+
+.achivments-content {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.achivments-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 2;
+}
+
+.achivment-label {
+  text-align: center;
+  color: #909090;
+  font-family: Inter;
+  font-size: var(--font-normal);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.achivment-image {
+  width: 60%;
+}
+
+.achivments-place {
+  grid-column: span 1;
+}
+
+
+.contact-me {
+  padding-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-me-title {
+  color: #000;
+  font-family: "Old Standard TT";
+  font-size: var(--font-medium);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-me-text {
+  margin-top: 12px;
+  margin-bottom: 60px;
+  color: #909090;
+  font-family: Inter;
+  font-size: var(--font-normal);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 200%; /* 56px */
+}
+
+.contact-me-social {
+  display: flex;
+  align-items: center;
+}
+
+.social-value {
+  color: #909090;
+  margin-left: 30px;
+  font-family: Inter;
+  font-size: var(--font-normal);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+
+.menu-mobile-open {
+  display: none;
+  transition: transform 0.8s ease;
+  will-change: transform;
+}
+
+.footer {
+  background: linear-gradient(91deg, rgba(61, 61, 61, 0.80) 0.38%, rgba(94, 94, 94, 0.80) 99.9%), #D9D9D9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  margin-top: 200px;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+  :root {
+    --font-large: 52px;
+    --font-medium: 32px;
+    --spacing-large: 150px;
+    --spacing-medium: 90px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  :root {
+    --font-large: 44px;
+    --font-medium: 22px;
+    --font-average: 18px;
+    --font-normal: 13px;
+    --spacing-large: 100px;
+    --spacing-medium: 60px;
+  }
+  
+  .menu .menu-points{
+    display: none;
+  }
+
+  .contact-me {
+    flex-direction: column;
+  }
+  .contact-me-img {
+    width: 300px;
+  }
+
+
+  .aboutMe {
+    flex-direction: column;
+  }
+
+  .quotation .quotation-block {
+    font-size: 20px;
+    height: 80px;
+  }
+  .quotation .quotation-author {
+    margin-right: 20px;
+    font-size: 20px;
+    padding-top: 30px;
+  }
+
+  .achivment-label {
+    margin-top: 20px;
+  }
+
+  .aboutMe .aboutMe-image {
+    width: 300px;
+  }
+
+  .aboutMe .aboutMe-text {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .aboutMe .getFeedback {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .companies-getFeedback {
+    margin-top: 60px;
+  }
+
+  .skills {
+    margin: 100px 0;
+    row-gap: 20px;
+  }
+
+  .skills .skills-label {
+    margin-bottom: 30px;
+    margin-right: 20px;
+  }
+  .skills .skills-line {
+    margin: 20px;
+  }
+
+  .skills-line .skill {
+    grid-column: span 4;
+  }
+  .skill-place {
+    grid-column: span 2;
+  }
+
+  .companies .companies-list {
+    margin: 100px 0;
+    row-gap: 60px;
+  }
+
+  .companies-list .companies-container {
+    grid-column: span 4;
+  }
+
+  .companies-container .company-logo {
+    height: 100px;
+  }
+
+  .companies-mainText {
+    width: 90%;
+  }
+
+  .achivments {
+    margin: 100px 0;
+  }
+
+  .achivments-label {
+    font-weight: 400;
+    margin-left: 20px;
+  }
+
+
+  .achivments-content {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 60px;
+  }
+
+  .achivments-place {
+    display: none;
+  }
+  .achivments-item {
+    grid-column: span 4;
+  }
+
+
+  .contact-me {
+    padding-top: 40px;
+  }
+
+  .contact-me-img {
+    display: none;
+  }
+
+  .contact-me-img-mobile {
+    width: 300px;
+    margin-bottom: 60px;
+    display: block;
+  }
+
+  .footer {
+    height: 100px;
+    margin-top: 100px;
+  }
+
+  .footer-logo {
+    height: 40px;
+  }
+
+
+  .menu .menu-mobile {
+    border: none;
+    background-color: transparent;
+    margin-right: 35px;
+    display: block;
+  }
+
+  .menu-mobile-open {
+    transition: 0.8s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background: #FFFFFF;
+  }
+
+  .isOpen {
+    transform: translateY(47%);
+  }
+  .isClosed {
+    transform: translateY(2000px);
+  }
+
+  .mobile-menu-point {
+    color: #fff;
+    display: block;
+  }
+
+  .mobile-menu-point .menu-item {
+    color: #909090;
+    text-align: center;
+    width: 300px;
+    padding: 8px 0;
+    border-radius: 32px;
+    border: 1px solid #909090;
+    font-family: "Old Standard TT";
+    font-size: 18px;
+    margin: 20px auto;
+  }
+
+  .menu-logo {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    filter: invert(0.4);
+    margin-top: 20px;
+  }
+}
+
+@media (prefers-color-scheme: white) {
+  :root {
+    --color-primary: #FFFFFF;
+    --color-secondary: #ADADAD;
+    --color-white: #000000;
+  }
+
+  body {
+    background-color: #121212;
+  }
+
+  .menu {
+    background: #1E1E1E;
+  }
+
+  .menu .menu-item {
+    color: var(--color-primary);
+  }
+
+  .menu .menu-item:hover {
+    color: rgba(255, 255, 255, 0.60);
+  }
+
+  .hero .hero-label,
+  .hero .hero-subtitle {
+    color: var(--color-primary);
+  }
+
+  .hero-getMore-title {
+    color: var(--color-primary);
+  }
+
+  .quotation .quotation-author {
+    color: var(--color-primary);
+  }
+
+  .aboutMe-text .aboutMe-title {
+    color: var(--color-primary);
+  }
+
+  .aboutMe-text .aboutMe-mainText {
+    color: var(--color-secondary);
+  }
+
+  .skills .skills-label {
+    color: var(--color-primary);
+  }
+
+  .companies .companies-label {
+    color: var(--color-primary);
+  }
+
+  .companies-bold {
+    color: var(--color-primary);
+  }
+
+  .achivments {
+    color: var(--color-primary);
+  }
+
+  .contact-me-title {
+    color: var(--color-primary);
+  }
+
+  .menu-mobile-open {
+    background: #1E1E1E;
+  }
+}
+
+/* Утилитарные классы */
+.text-center { text-align: center; }
+.margin-auto { margin-left: auto; margin-right: auto; }
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-center {
+  display: grid;
+  place-items: center;
 }

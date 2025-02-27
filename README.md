@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Персональный сайт-портфолио продуктового менеджера
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📋 Описание
 
-## Available Scripts
+Персональный веб-сайт, представляющий профессиональное портфолио продуктового менеджера. Сайт разработан с использованием современных веб-технологий и демонстрирует опыт работы, навыки и достижения в области управления продуктами.
 
-In the project directory, you can run:
+## 🛠 Технологии
 
-### `npm start`
+- React.js
+- JavaScript (ES6+)
+- CSS3
+- HTML5
+- Адаптивный дизайн
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🔥 Основной функционал
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Интерактивное представление профессионального опыта
+- Демонстрация ключевых навыков и компетенций
+- Таймлайн работы в различных компаниях
+- Форма обратной связи для потенциальных клиентов
+- Адаптивный дизайн для всех устройств
+- Оптимизированная производительность
 
-### `npm test`
+## 📱 Разделы сайта
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Главная секция** - краткое представление и ключевые компетенции
+- **Обо мне** - подробная информация о профессиональном опыте
+- **Компании** - опыт работы с различными организациями
+- **Достижения** - ключевые профессиональные успехи
+- **Контакты** - форма для связи
 
-### `npm run build`
+## 🚀 Установка и запуск
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Клонировать репозиторий:
+   ```bash
+   git clone https://github.com/yourusername/your-repo.git
+   cd your-repo
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Установить зависимости:
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Запустить проект:
+    ```bash
+    npm start
+    ```
 
-### `npm run eject`
+4. Открыть браузер и перейти на `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 💡 Особенности реализации
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Компонентный подход к разработке
+- Семантическая верстка для лучшей доступности
+- Оптимизированная производительность
+- Чистый и поддерживаемый код
+- Современные практики React-разработки
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🔍 Структура проекта
 
-## Learn More
+- `src/components/` - компоненты проекта
+- `src/images/` - изображения
+- `src/index.css` - глобальные стили
+- `src/App.jsx` - основной компонент приложения
+- `src/index.js` - точка входа в приложение
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📈 Планы по улучшению
 
-### Code Splitting
+- [ ] Добавление анимаций
+- [ ] Многоязычность
+- [ ] Темная тема
+- [ ] Интеграция с CMS для удобного обновления контента
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Срок разработки
 
-### Analyzing the Bundle Size
+- 24.02.2025 - 26.02.2025
+Включая разработку дизайна сайта, верстку и настройку адаптивности.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 👤 Автор
 
-### Making a Progressive Web App
+- Микаэл Оганесян
+- Frontend разработчик
+- [Telegram](https://t.me/returntozer0)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📄 Лицензия
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License. См. файл `LICENSE` для получения дополнительной информации.
